@@ -97,11 +97,21 @@ function ChallengeTesting()
     }
     function PrintandAdd(userInput)
     {
-        console.log(attendance);
-        attendance.push(userInput);
-        console.log(attendance);
-    }
+        if(userInput === "Student" || userInput === "Teacher" || userInput === "Parent")
+        {
+            console.log(attendance);
+            attendance.push(userInput);
+            console.log(attendance);
+        }
+        else
+            {
+                console.log("error")
+            }
 
+        }
+
+    PrintandAdd("Student");
 }
 
 ChallengeTesting()
+
