@@ -95,6 +95,12 @@ function ChallengeTesting()
             user = "q";
         }
     }
+    function PrintandAdd(userInput)
+    {
+        console.log(attendance);
+        attendance.push(userInput);
+        console.log(attendance);
+    }
 
 }
 
