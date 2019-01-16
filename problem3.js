@@ -14,23 +14,63 @@ the loop cannot reach the user argument?
 set an if at the end to break
 swap order of the parameters?
 swapping order of parameters prevents loop from running since user is not defined
-
+ while loop meets parameters for the challenge but not the first part
  */
 
 
-main2();
+// main2();
+//
+//
+// function main2()
+// {
+//
+//     var attendance = [];
+//
+//     for( ; attendance.length <5 ;   )
+//     {
+//         user = prompt("who is checking in? Parent , Teacher , Student");
+//         switch (user)
+//         {
+//             case"Parent" :
+//                 attendance.push(user);
+//                 console.log("Welcome");
+//                 break;
+//             case"Teacher" :
+//                 attendance.push(user);
+//                 console.log("Hello");
+//                 break;
+//             case"Student" :
+//                 attendance.push(user);
+//                 console.log("Did you do your homework?");
+//                 break;
+//             case "q":
+//                 console.log("Goodbye");
+//                 break;
+//             default:
+//                 console.log("Are you supposed to be here?");
+//                 break;
+//         }
+//         if(user === "q")
+//         {
+//             break;
+//         }
+//     }
+//
+// // create a teacher/student/parent function that will print and add to the array
+//
+//
+// }
 
 
-function main2()
+
+function ChallengeTesting()
 {
-
     var attendance = [];
-
-    for( ; attendance.length <5 ;   )
+    let user = "";
+    while(user !== "q")
     {
         user = prompt("who is checking in? Parent , Teacher , Student");
-        switch (user)
-        {
+        switch (user) {
             case"Parent" :
                 attendance.push(user);
                 console.log("Welcome");
@@ -50,11 +90,12 @@ function main2()
                 console.log("Are you supposed to be here?");
                 break;
         }
-        if(user === "q")
+        if(attendance.length === 5)
         {
-            break;
+            user = "q";
         }
     }
 
-// create a teacher/student/parent function that will print and add to the array
 }
+
+ChallengeTesting()
